@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+   <nav>
+    <div class="title-box">
+        <h2 class="title">Online Clock</h2>
+    </div>
+    <div class="clock-box">
+        <div class="digital-box  ">
+            <img id="digital" src="digital-clock.png" alt="">
+            <span class="text">Digital</span>
+        </div>
+        <div class="analog-box not-active">
+            <span><i class="fa-solid fa-clock" id="analog"></i></span>
+            <span class="text">Analog</span>
+            
+        </div>
+    </div>
+   </nav>
+   <!-- ! digital clock -->
+    <div class="digital-clock show">
+           <div>
+            <span id="hour">00</span>
+           </div>
+
+           <div>
+            <span id="minutes">00</span>
+           </div>
+
+           
+           <div>
+               <span id="seconds">00</span>
+            </div>
+            <div>
+             <span id="ampm" class="">AM</span>
+            </div>
+    </div>
+
+    <!-- ! analog clock -->
+
+    <div class="analog-clock ">
+        <div class="hor">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+
+    <!-- ! switch button -->
+    <div class="switch-container">
+        <p>Night Mode</p>
+        <label class="switch">
+            <input type="checkbox" class="input">
+            <span class="slider"></span>
+        </label>
+    </div>
+   <script src="app.js" defer></script>
+   <script src="https://kit.fontawesome.com/8b0bbca3c6.js" crossorigin="anonymous"></script>
+</body>
+</html>
